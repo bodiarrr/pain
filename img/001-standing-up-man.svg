@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="53px" viewBox="0 0 23 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>A698228C-B39F-429C-B183-34C9B4920483</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="11.5" cy="4.5" r="4.5"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="9" height="9" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M13.0076868,11.160441 C11.8661971,10.9353572 10.6250938,10.9452293 9.50393337,11.2019039 C1.88756423,12.0686741 -0.585494111,20.6307449 0.112817059,27.1591635 C0.415723506,29.9815964 4.9969294,30.0112126 4.69097355,27.1591635 C4.43685741,24.7799878 4.54561912,21.1895057 5.84771025,18.6375683 C5.84771025,21.7393815 5.84771025,24.8411948 5.84771025,27.9420209 C5.84771025,28.0516011 5.85889136,28.154271 5.86397369,28.2599024 C5.86092429,28.3102501 5.84872672,28.3527001 5.84872672,28.4040351 C5.84872672,35.7873773 5.83551268,43.167758 5.52142512,50.545177 C5.38216947,53.824688 10.6179786,53.8118543 10.7562177,50.545177 C11.0022022,44.7630891 11.0642065,38.9780395 11.078437,33.1920027 C11.3264544,33.2077981 11.5744717,33.2077981 11.8224891,33.1939771 C11.8377361,38.9800139 11.8977075,44.7650635 12.141659,50.545177 C12.2809146,53.8118543 17.5167237,53.824688 17.3764516,50.545177 C17.062364,43.167758 17.0511829,35.7873773 17.0511829,28.4040351 C17.0511829,28.1750024 17.0196725,27.9667011 16.9718987,27.7662975 C16.9647834,24.5608272 16.8387418,21.3523953 16.8773675,18.1488994 C18.4366242,20.7126833 18.5789292,24.6230214 18.3085496,27.157189 C18.0015773,30.0072638 22.5837997,29.9786347 22.8867061,27.157189 C23.6012807,20.4935227 21.009296,11.7093297 13.0076868,11.160441 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="23" height="42" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="5,1">
+        <g id="LOfP-02-PlacePage" transform="translate(-1025.000000, -1515.000000)" stroke="#B7A77F" fill-rule="nonzero" stroke-width="2">
+            <g id="Group-16" transform="translate(227.000000, 1315.000000)">
+                <g id="Group-15" transform="translate(83.000000, 36.000000)">
+                    <g id="Group-28" transform="translate(631.000000, 158.000000)">
+                        <g id="001-standing-up-man" transform="translate(84.000000, 6.000000)">
+                            <use id="Oval" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                            <use id="Shape" mask="url(#mask-4)" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

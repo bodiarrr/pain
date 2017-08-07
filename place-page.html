@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Place Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+	<!-- bxSlider CSS file -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />	
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>	
+  </head>
+  
+<body class="bg-full">
+    <header>
+		<div class="menu">
+			<a class="navbar-brand" href="#"><img src="img/logo.svg"></a>
+			<div class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+
+				</div>
+				
+				<div class="social">
+					<ul class="nav navbar-nav">
+						<li><a href="#"><img src="img/telegram.svg"></a></li>
+						<li><a href="#"><img src="img/twitter1.svg"></a></li>
+						<li><a href="#"><img src="img/facebook1.svg"></a></li>
+						<li><a href="#"><img src="img/001-soundcloud1.svg"></a></li>
+						<li><a href="#"><img src="img/002-youtube1.svg"></a></li>
+						<li><a href="#"><img src="img/003-instagram1.svg"></a></li>					
+					</ul>
+				</div>
+
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+					  <input type="text" class="form-control" placeholder="">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>			
+				
+				<div class="collapse navbar-collapse">
+				  <ul class="nav navbar-nav navbar-main">
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Donate Now</a></li>
+					<li><a href="#">Submit information</a></li>
+					<li><a href="#">Take action</a></li>	
+					<li><a href="#">Contact us</a></li>
+				  </ul>
+				</div><!--/.nav-collapse -->
+
+			
+				<div class="category">
+					<div class="collapse navbar-collapse">
+						  <ul class="nav navbar-nav navbar-category">
+							<li><a href="#">mass graves</a></li>
+							<li><a href="#">Documents</a></li>
+							<li><a href="#">Audio</a></li>
+							<li><a href="#">Visual media</a></li>	
+							<li><a href="#">Perpetrators</a></li>
+							<li><a href="#">Enforced</a></li>
+							<li><a href="#">disappeared persons</a></li>
+							<li><a href="#">Latest developments</a></li>	
+							<li><a href="#">Reports</a></li>
+							<li><a href="#">Timelines</a></li>
+							<select>
+								<option value="english">English</option>
+							</select>							
+						  </ul>
+					</div><!--/.nav-collapse -->	
+				</div>
+			
+			</div>
+		</div>	
+    </header>
+
+
+	<div class="main">
+		
+		<section class="info-place">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 bg-row"  style="background-image:url(img/group-3.jpg);">
+						<div class="item">
+							<h2>Sanjan</h2>
+							<p>Watching the news the other day, it occurred to me that people who have “words to live by” often begin to attack and even kill others. I thought back to my own angry youth, when I could easily use words to justify violent thoughts which might have become violent actions. Words are tools, and yet it seems that they can be more dangerous than gunpowder.<br><br>Imagine two men facing each other, pointing past one another. One is pointing at a tornado that is coming, and the other at a raging fire headed towards them. Each sees their own truth and is angry at the sight of the other’s hand. Each feels that the other’s hand is “wrong.” This may seem silly, but replace the tornado and fire with any modern issues, and the hands with words, and this scene describes how we often try to communicate.</p>
+							<div class="label-text">
+								Take action and call this number to be the change…
+							</div>
+						</div>							
+					</div>
+				</div>
+			</div>
+		</section>	
+
+		<section class="sli-news">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 bg-row">
+						<div class="overlay"></div>
+						<ul class="bxslider">
+						  <li>
+							<div class="item">
+								<span><img src="img/sli.png"/></span>
+								<h3 class="title">Audio file talking to Azadeh 20015</h3>
+								<p class="date">Published on 23 October 2018</p>
+							</div>  
+						  </li>
+						  <li>
+							<div class="item">
+								<span><img src="img/sli.png"/></span>
+								<h3 class="title">Audio file talking to Azadeh 20015</h3>
+								<p class="date">Published on 23 October 2018</p>
+							</div>  
+						  </li>
+						  <li>
+							<div class="item">
+								<span><img src="img/sli.png"/></span>
+								<h3 class="title">Audio file talking to Azadeh 20015</h3>
+								<p class="date">Published on 23 October 2018</p>
+							</div>  
+						  </li>						  
+						</ul>					
+					</div>
+				</div>
+			</div>
+		</section>	
+
+		<section class="info">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 bg-row">
+
+							<div class="row">						
+								<div class="col-xs-4 col-sm-4 col-md-4">								
+									<span><img src="img/group-12.svg"></span>
+									<h3>Latest developments</h3>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<span><img src="img/shape.svg"></span>
+									<h3>The timeline of the<br>mass grave</h3>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<span><img src="img/shape1.svg"></span>
+									<h3>Visual media</h3>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<span><img src="img/005-microphone.svg"></span>
+									<h3>Audio</h3>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<span><img src="img/009-file.svg"></span>
+									<h3>Documents</h3>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<span><img src="img/001-standing-up-man.svg" style="padding: 5px 0 0 0;"></span>
+									<h3>Enforced<br>disappeared persons</h3>
+								</div>
+							</div>
+							
+							<div class="row">							
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<span><img src="img/002-man-user.svg"></span>
+									<h3>Perpetrators</h3>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<a href="#" class="btn btn-default">SUBMIT INFORMATION</a>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<span><img src="img/002-chat.svg"></span>
+									<h3>Reports</h3>
+								</div>	
+							</div>
+							
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="share">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 bg-row">
+						<div class="item">
+							<p>Share this page on social media</p>
+							<ul>
+								<li><a href="#"><img src="img/telegram1.svg"></a></li>
+								<li><a href="#"><img src="img/twitter.svg"></a></li>
+								<li><a href="#"><img src="img/facebook.svg"></a></li>
+								<li><a href="#"><img src="img/001-soundcloud.svg"></a></li>
+								<li><a href="#"><img src="img/002-youtube.svg"></a></li>
+								<li><a href="#"><img src="img/003-instagram.svg"></a></li>							
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="geolocation">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 bg-row">
+						<p>To see the exact location of the mass grave, you need to zoom in.</p>
+						<div id="map"></div>	
+					</div>
+				</div>
+
+			</div>
+		</section>
+		
+		<section class="form">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 bg-row">
+						<h3>Submit informations<h3/>
+						<h4>How can we contact you? Add your email, Facebook, Phone or Whatsapp number here so we can contact you if needed
+						</h4>
+						<div class="group" style="float:left">
+							<h4 style="margin: 0 0 12px 0">
+								<br><strong>Please ensure that all information you provide will be kept with maximum confidentially and security.</strong>
+							</h4>						
+							<input type="text" class="text"/>
+						</div>
+						<div class="group" style="float: left; margin: 13px 0 0px 30px;">
+							<h4 style="margin: 0 0 12px 0">
+								<br><strong>Which location or city do you want to write about?</strong>
+							</h4>						
+							<input type="text" class="text"/>
+						</div>
+						
+						<div style="clear:both"></div>
+						
+						<h4 style="width: auto;margin: 24px 0 5px 0;"><strong>Do you know something about this place? Would like to help us with giving more information? How can we contact you?</strong></h4>
+						<input type="texarea" class="texarea" style="  height: 172px;background-color: rgba(255, 255, 255, 0.4);border: none;width: 100%;"/>
+						
+						<img src="img/cap.png" style="margin: -30px auto -9px;display: block;"/>
+						
+						<a href="#" class="btn btn-default">SUBMIT INFORMATION</a>
+						
+					</div>
+				</div>
+
+			</div>
+		</section>
+		
+	</div>
+
+
+    <div id="footer">
+      <div class="container">
+			<img src="img/logo1.png">
+			<div class="navbar navbar-default" role="navigation">			
+				<div class="category">
+						<ul class="nav navbar-nav navbar-category">
+							<li><a href="#">mass graves</a></li>
+							<li><a href="#">Documents</a></li>
+							<li><a href="#">Audio</a></li>
+							<li><a href="#">Visual media</a></li>	
+							<li><a href="#">Perpetrators</a></li>
+							<li><a href="#">Enforced</a></li>
+							<li><a href="#">disappeared persons</a></li>
+							<li><a href="#">Latest developments</a></li>	
+							<li><a href="#">Reports</a></li>
+							<li><a href="#">Timelines</a></li>						
+						</ul>	
+				</div>
+			</div>				
+			<div class="navbar navbar-default" role="navigation">	
+				  <ul class="nav navbar-nav navbar-main">
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Donate Now</a></li>
+					<li><a href="#">Submit information</a></li>
+					<li><a href="#">Take action</a></li>	
+					<li><a href="#">Contact us</a></li>
+				  </ul>
+			</div>		
+      </div>
+    </div>
+
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+			$(document).ready(function(){
+			  $('.bxslider').bxSlider({
+				minSlides: 1,
+				maxSlides: 1,
+			  });
+			});
+    </script>
+  
+</body>
+
+</html>
